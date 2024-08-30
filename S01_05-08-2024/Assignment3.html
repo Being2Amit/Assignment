@@ -1,0 +1,96 @@
+<!-- Create UI Component in React JS -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <style>
+      /* Style for each image block */
+      .image{
+        width: 100%; 
+        height: 148.34px;
+        margin: 10px;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      /* Style for the inner container of each image block */
+      .inner{
+        height: 100%;
+        width: 288.75px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      /* Style for the links inside the inner container */
+      .inner a{
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+        color: #000927;
+        font-family: sans-serif;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+      /* Background styles for different images */
+      .one{
+        background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZWphHCvOcC6GiYS0LQIyfcsiUsp5Z0WozIuHv6Q0hcUU3erai");
+        }
+      .two{
+        background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('https://www.clinicaltrialsarena.com/wp-content/uploads/sites/22/2019/07/ACPS-PS-1-management.jpg');
+      }
+      .three{
+        background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('https://img.freepik.com/premium-photo/cartoon-people-classroom-with-graph-wall_1044943-20746.jpg?w=996');
+      }
+      .four{
+        background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('https://qualitythought.in/wp-content/uploads/2024/04/boy-at-music-school-learning-to-play-drums-2021-09-24-04-29-43-utc_7-768x768.webp');
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // Step 1: Create individual elements h2
+      var h2 = React.createElement("h2", {style:{fontSize: '40px', textAlign: 'center', margin: '0', fontFamily: 'sans-serif', color: '#000927',}}, "Our Certifications from Indian Agile Board");
+
+      //Create a div with classname 'inner' first block
+      var h1 = React.createElement("h3",{style:{color: 'white'}}, "Scrum master/Project manager Training Certification");
+      var link = React.createElement("a", { href: "#" }, "Scrum master");
+      var image = React.createElement("div", { className: "image one"},h1); 
+      var inner = React.createElement("div", { className: "inner" }, [image, link]);
+
+      //Create a div with classname 'inner' second block
+      var h1 = React.createElement("h3",{style:{color: 'white'}}, "Enterprise Agile / Scaled Agile Certification Training");
+      var link = React.createElement("a", { href: "#" }, "Scaled Agile Certification");
+      var image = React.createElement("div", { className: "image two" },h1);  
+      var inner1 = React.createElement("div", { className: "inner" }, [image, link]);
+
+      //Create a div with classname 'inner' third block
+      var h1 = React.createElement("h3",{style:{color: 'white'}}, "PMP Certification Training");
+      var link = React.createElement("a", { href: "#" }, "PMP Certification Course");
+      var image = React.createElement("div", { className: "image three" },h1);
+      var inner2 = React.createElement("div", { className: "inner" }, [image, link]);
+
+      //Create a div with classname 'inner' fourth block
+      var h1 = React.createElement("h3",{style:{color: 'white'}}, "ISTQB Certification Training")
+      var link = React.createElement("a", { href: "#" }, "ISTQB Certification");
+      var image = React.createElement("div", { className: "image four" },h1);
+      var inner3 = React.createElement("div", { className: "inner" }, 
+      [image, link]);
+
+      // Step 2: Group inner elements into the images container
+      var images = React.createElement("div", { className: "images",
+      style: {width: '1200px',height: '200px',margin: '10px',display: 'flex',justifyContent:'space-around',alignItems: 'center',}}, 
+      [inner, inner1, inner2, inner3]);
+
+      // Step 3: Create the main container element
+      var container = React.createElement("div", { className: "container",
+      style:{width: '1300px',height: '300px',margin: '10px',display: 'flex' ,flexDirection: 'column',justifyContent: 'center',alignItems: 'center',}}, 
+      [h2, images]);
+
+      // Step 4: Render the element into the DOM
+      ReactDOM.render(container, document.querySelector("body"));
+    </script>
+  </body>
+</html>

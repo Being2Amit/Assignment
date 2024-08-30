@@ -1,0 +1,148 @@
+<!-- Create UI Component in HTML and CSS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        /* Style for the main container */
+        .container{
+            width: 1300px;
+            height: 300px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        /* Style for the main heading */
+        h2{
+            font-size: 40px;
+            text-align: center;
+            margin: 0;
+            font-family: sans-serif;
+            color: #000927;  
+        }
+        /* Style for headings inside images */
+        h3{
+            color: white;
+        }
+        /* Style for the images container */
+        .images{
+            width: 1200px;
+            height: 200px;
+            display: flex;
+            margin: 10px;
+            justify-content:space-around;
+            align-items: center;
+        }
+        /* Style for each image block */
+        .image{
+            width: 100%;
+            height: 148.34px;
+            margin: 10px;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        /* Style for the inner container of each image block */
+        .inner{
+            height: 100%;
+            width: 288.75px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        /* Style for the links inside the inner container */
+        .inner a{
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            color: #000927;
+            font-family: sans-serif;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        /* Background styles for different images */
+        .one{
+            background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZWphHCvOcC6GiYS0LQIyfcsiUsp5Z0WozIuHv6Q0hcUU3erai");
+        }
+        .two{
+            background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('https://www.clinicaltrialsarena.com/wp-content/uploads/sites/22/2019/07/ACPS-PS-1-management.jpg');
+        }
+        .three{
+            background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('https://img.freepik.com/premium-photo/cartoon-people-classroom-with-graph-wall_1044943-20746.jpg?w=996');
+        }
+        .four{
+            background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('https://qualitythought.in/wp-content/uploads/2024/04/boy-at-music-school-learning-to-play-drums-2021-09-24-04-29-43-utc_7-768x768.webp');
+        }
+    </style>
+</head>
+<body>
+    <!-- Step 1: Create the container div and set its class to 'container' -->
+    <div class="container">
+
+        <!-- Step 2: Create the h2 element for the heading and set its text content -->
+        <h2>Our Certifications from Indian Agile Board</h2>
+
+        <!-- Step 3: Create the images container div and set its class to 'images'-->
+        <div class="images">
+
+            <!-- Step 4: Create the first div block and set its class to 'inner' -->
+            <div class="inner">
+
+                <!-- Create the image div and set its class to 'image one' -->
+                <div class="image one">
+
+                    <!--Create the h3 element and set its text content -->
+                    <h3>Scrum master/Project manager Training Certification</h3>
+                </div>
+
+                <!-- Create the link element, set its href and text content -->
+                <a href="#">Scrum master</a>
+            </div>
+
+            <!-- Step 5: Create the second div block and set its class to 'inner' -->
+            <div class="inner">
+
+                <!-- Create the image div and set its class to 'image two' -->
+                <div class="image two">
+
+                    <!--Create the h3 element and set its text content -->
+                    <h3>Enterprise Agile / Scaled Agile Certification Training</h3>
+                </div>
+
+                <!-- Create the link element, set its href and text content -->
+                <a href="#">Scaled Agile Certification</a>
+            </div>
+            <!-- Step 6: Create the third div block and set its class to 'inner' -->
+            <div class="inner">
+
+                <!-- Create the image div and set its class to 'image three' -->
+                <div class="image three">
+
+                    <!--Create the h3 element and set its text content -->
+                    <h3>PMP Certification Training</h3>
+                </div>
+
+                <!-- Create the link element, set its href and text content -->
+                <a href="#">PMP Certification Course</a>
+            </div>
+             <!-- Step 7: Create the fourth div block and set its class to 'inner' -->
+            <div class="inner">
+                
+                <!-- Create the image div and set its class to 'image four' -->
+                <div class="image four">
+
+                    <!--Create the h3 element and set its text content -->
+                    <h3>ISTQB Certification Training</h3>
+                </div>
+
+                <!-- Create the link element, set its href and text content -->
+                <a href="#">ISTQB Certification</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

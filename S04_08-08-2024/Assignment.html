@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card in function</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        .card{
+        width: 300px;
+        box-shadow: 0 0 10px royalblue;
+        padding: 10px;
+        text-align: center;
+        border-radius: 20px;
+        background-color: gray;
+        color: white;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        justify-content: center;   
+      }
+      img{
+        border-radius: 10px;
+      }
+      p{
+        background-color: royalblue;
+      }
+      h1{
+        color: tomato;
+      }
+    </style>
+    
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script type="text/babel">
+        function createcard(title, imgSrc, description) {
+            return (
+                <div className="card">
+                    <h1>{title}</h1>
+                    <img src={imgSrc} width="300" height="300" alt={title}/>
+                    <p>{description}</p>
+                    <button>Profile Details</button>
+                </div>
+            );
+        }
+        function main() {
+        return (
+          <div className="container">
+            {createcard(
+              "iPhone 13", 
+              "https://assets.sangeethamobiles.com/product_img/8538/1667547711_A7D.jpg" ,
+              "The iPhone 13 display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle. When measured as a standard rectangular shape, the screen is 15.40 centimetres / 6.06“ diagonally (actual viewable area is less)."
+            )}
+            {createcard(
+              "iPhone 14",
+              "https://assets.sangeethamobiles.com/product_img/6976/1663134526_5kD.jpg", 
+              "The iPhone 14 display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle. When measured as a standard rectangular shape, the screen is 15.40 centimetres (6.06″) diagonally (actual viewable area is less)."
+            )}
+            {createcard(
+              "iPhone 15", 
+              "https://assets.sangeethamobiles.com/product_img/14501/1694714797_wP3.jpg" ,
+              "The iPhone 15 display has rounded corners that follows a beautiful curved design, and these corners are within a standard rectangle. When measured as a standard rectangular shape, the screen is 15.54 cm (6.12″) diagonally (actual viewable area is less)."
+            )}
+            {createcard(
+              "iPhone 13 Pro", 
+              "https://assets.sangeethamobiles.com/product_img/8538/1667547711_A7D.jpg" ,
+              "The iPhone 13 display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle. When measured as a standard rectangular shape, the screen is 15.40 centimetres / 6.06“ diagonally (actual viewable area is less)."
+            )}
+            {createcard(
+              "iPhone 14 Pro",
+              "https://assets.sangeethamobiles.com/product_img/6976/1663134526_5kD.jpg", 
+              "The iPhone 14 display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle. When measured as a standard rectangular shape, the screen is 15.40 centimetres (6.06″) diagonally (actual viewable area is less)."
+            )}
+            {createcard(
+              "iPhone 15 Pro", 
+              "https://assets.sangeethamobiles.com/product_img/14501/1694714797_wP3.jpg" ,
+              "The iPhone 15 display has rounded corners that follows a beautiful curved design, and these corners are within a standard rectangle. When measured as a standard rectangular shape, the screen is 15.54 cm (6.12″) diagonally (actual viewable area is less)."
+            )}
+          </div>
+        );
+      }
+
+        ReactDOM.render(main(),document.getElementById("root"))
+    </script>
+</body>
+</html>

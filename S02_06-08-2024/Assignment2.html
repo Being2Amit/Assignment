@@ -1,0 +1,56 @@
+<!-- Create Navbar -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    
+    <!-- Integrated/Import React and ReactDOM libraries  -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+  <body style="margin: 0">
+    <!-- Create a root div where React components will be rendered -->
+    <div id="root"></div>
+    <script>
+      // Create a React element representing a div with className 'Header' and specified style
+      var header = React.createElement(
+        'div',
+        { className: 'Header',
+          style:{ width: '100%',height: '70px', backgroundColor: 'black', display: 'flex'}
+        },
+
+        // Create a nested div inside the header with className 'leftColumn' and specified styles
+        React.createElement(
+          'div',
+          { className: 'leftColumn',
+            style:{width: '40%'},
+          },
+
+          // Create an h2 element inside the leftColumn div with specified styles and text content 'MyPortfolio'
+          React.createElement('h2', 
+          {
+            style:{color: 'white',textAlign: 'center'},
+          }, 'MyPortfolio')
+        ),
+
+        // Create a nested div inside the header with className 'rightColumn' and specified styles 
+        React.createElement(
+          'div',
+          { className: 'rightColumn' ,
+            style: { width: '60%', display: 'flex', justifyContent: 'flex-end', alignItems: 'center'}
+          },
+
+           // Create anchor tags inside the rightColumn div with specified styles and text content for each link
+          React.createElement('a', { href: '#',style: { color: 'white', marginRight: '50px', textDecoration: 'none'}},'Home'),
+          React.createElement('a', { href: '#',style: { color: 'white', marginRight: '50px', textDecoration: 'none'}},'Profile'),
+          React.createElement('a', { href: '#',style: { color: 'white', marginRight: '50px', textDecoration: 'none'}},'Users'),
+          React.createElement('a', { href: '#',style: { color: 'white', marginRight: '50px', textDecoration: 'none'}},'Contact')
+        )
+      );
+
+      // Render the header element into the DOM node with id 'root'
+      ReactDOM.render(header, document.getElementById('root'));
+    </script>
+  </body>
+</html>

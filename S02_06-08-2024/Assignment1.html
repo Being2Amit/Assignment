@@ -1,0 +1,29 @@
+<!-- Create h1 to h6 and Button element -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> All h1-h6 tag using html</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      // React Code
+      var h1ReactEl = React.createElement("h1", null, "Welcome to React-JS ");
+      var h2ReactEl = React.createElement("h2", null, "Welcome to React-JS ");
+      var h3ReactEl = React.createElement("h3", null, "Welcome to React-JS ");
+      var h4ReactEl = React.createElement("h4", null, "Welcome to React-JS ");
+      var h5ReactEl = React.createElement("h5", null, "Welcome to React-JS ");
+      var h6ReactEl = React.createElement("h6", null, "Welcome to React-JS ");
+      var buttonReactEl = React.createElement("button", null, "Welcome to click ");
+
+      var container = React.createElement("div",null, h1ReactEl,h2ReactEl,h3ReactEl,h4ReactEl,h5ReactEl,h6ReactEl,buttonReactEl);
+
+      ReactDOM.render(container, document.getElementById("root"));
+    </script>
+  </body>
+</html>

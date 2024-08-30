@@ -1,0 +1,42 @@
+<!-- Create Two Div and use Img,Paragraph,Headings-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+  <body>
+    <script>
+        var img = React.createElement("img", 
+        {src:"https://www.setmytrip.in/wp-content/uploads/2023/12/PSX_20231231_170054.jpg",width:'500px', height:'400px'});
+        var h2 = React.createElement("h2", 
+        null, 
+        "Ayodhya Ram Temple Complex Redefines Architectural Grandeur");
+
+        var p = React.createElement("p", 
+        {style:{textAlign:'left'}},  
+    "In a momentous celebration of faith and architectural splendor, the Ram Janmabhoomi Trust unveiled the awe-inspiring landscape plan for the Ayodhya Ram Janmabhoomi Temple Complex, setting a new benchmark in religious edifices worldwide. The sprawling 110-acre complex, initially planned at 70 acres, stands as an embodiment of reverence and devotion, representing a significant pilgrimage destination for millions of devoteesImbued with symbolism and spiritual significance, the temple complex spans 250 feet in width and rises magnificently to 161 feet in height. Comprising a total of 392 pillars and 44 gates across its three floors, the complex showcases meticulous craftsmanship and attention to architectural detail. Uniquely, the Ram Temple features a 14-foot-wide ‘Perkota’ encircling the sanctum sanctorum, paying homage to the Sun God, Maa Bhagwati, Ganesha, and Shiva at its four corners. Additionally, it includes shrines dedicated to revered sages and deities, embodying the rich tapestry of Hindu mythology and culture.");
+
+        var div1= React.createElement("div",{style:{width:'100%',height:'750px',border:'5px solid green',borderRadius:'5px',textAlign:'center'}},h2,img,p)
+
+        var img = React.createElement("img", 
+        {src:"https://media.licdn.com/dms/image/v2/D5612AQHKvG0mpaV_sw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1706035107226?e=1728518400&v=beta&t=Vo2UzMg4cK2Wi0-2pOjlVxmCIzOx0wz1snpU7h2wLBU",width:'500px', height:'400px'});
+        var h2 = React.createElement("h2", 
+        null, 
+        "Dwarka: a fascinating realm of myth and materiality!");
+
+        var p = React.createElement("p", 
+        {style:{textAlign:'left'}
+    },  
+    "Dwarka, the resplendent city mentioned in the Mahabharata and other ancient Indian texts, holds immense significance for Hindus. It is believed to be the kingdom established by Lord Krishna, a revered deity, and its mythical grandeur has captivated imaginations for centuries. However, the question of its historical reality has long been a subject of debate.where Dwarka is traditionally believed to have been located. His meticulous investigations unearthed a submerged city, with remnants of gridded streets, intricate pottery, and even submerged structures.The quest for Dwarka's historical reality is not merely a matter of proving or disproving a myth. It's about understanding the complex interplay between myth, materiality, and historical processes. Dr. Rao's approach exemplifies this, urging us to move beyond simplistic binary conclusions and embrace the richness of archaeological evidence, even if it doesn't offer definitive answers.");
+
+        
+        var div2 = React.createElement("div",{style:{width:'100%',height:'750px',border:'5px solid red',borderRadius:'5px',textAlign:'center'}},h2,img,p)
+        
+        var container = React.createElement("div",{style:{width:'100%',height:'100%',display:'flex'}},div1,div2);
+        ReactDOM.render(container, document.querySelector('body'));
+    </script>
+  </body>
+</html>

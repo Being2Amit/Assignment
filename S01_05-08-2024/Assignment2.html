@@ -1,0 +1,226 @@
+<!-- Create UI Component in JavaScript -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // Step 1: Create a container div, set its classname
+            var container = document.createElement('div');
+            container.className = 'container';
+            // style it
+            container.style.width = '1300px';
+            container.style.height = '300px';
+            container.style.margin = '10px';
+            container.style.display = 'flex';
+            container.style.flexDirection = 'column';
+            container.style.justifyContent = 'center';
+            container.style.alignItems = 'center';
+            document.body.appendChild(container);// link append it to the body
+    
+            // Step 2: Create an h2 element, set its text content, 
+            var heading = document.createElement('h2');
+            heading.textContent = 'Our Certifications from Indian Agile Board';
+            //style it
+            heading.style.fontSize = "40px";
+            heading.style.textAlign = "center";
+            heading.style.fontFamily = "sans-serif";
+            heading.style.color= "#000927";  
+            heading.style.margin = '0';
+            container.appendChild(heading);//link append it to the 'container'
+    
+            // Create a div with classname 'images'
+            var images = document.createElement('div');
+            images.className = 'images';
+            //  style it
+            images.style.width = '1240px';
+            images.style.height = "200px";
+            images.style.display = "flex";
+            images.style.margin = "10px";
+            images.style.justifyContent = "space-around";
+            images.style.alignItems = "center";
+            container.appendChild(images);// link append it to the 'container'
+    
+            // Step 4: Create a div with classname 'inner' first block
+            var inner = document.createElement('div');
+            inner.className = 'inner';           
+            images.appendChild(inner);// link append it to the "images"
+    
+            //Create a div with classname 'image One'
+            var image = document.createElement('div');
+            image.className = 'image one';
+            //  image part style it
+            image.style.width = '100%';
+            image.style.height = '148.34px';
+            image.style.margin = '10px';
+            image.style.backgroundSize = 'cover';
+            image.style.display = 'flex';
+            image.style.justifyContent = 'center';
+            image.style.alignItems = 'center';
+            image.style.textAlign = 'center';
+            image.style.backgroundImage = "linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZWphHCvOcC6GiYS0LQIyfcsiUsp5Z0WozIuHv6Q0hcUU3erai')"           
+            //  inner part style it
+            inner.style.height = '100%';
+            inner.style.width = '300px';
+            inner.style.display = 'flex';
+            inner.style.flexDirection = 'column';
+            inner.style.alignItems = 'center';
+            inner.appendChild(image);// link append it to the 'inner' div
+    
+            //Create an h3 element, set its text content and style it
+            var h3 = document.createElement('h3');
+            h3.textContent = 'Scrum master/Project manager Training Certification';
+            h3.style.color = "white";
+            image.appendChild(h3);// link append it to the image div
+    
+            //Create an anchor element and Style the link
+            var link = document.createElement('a');
+            link.style.textDecoration = "none";
+            link.style.fontSize = '18px';
+            link.style.color = 'black';
+            link.style.fontFamily = 'sans-serif';
+            link.style.fontWeight = 'bold';
+            link.style.marginTop = '20px';
+            //set its href and text content,
+            link.href = '#';
+            link.textContent = 'Scrum master';            
+            inner.appendChild(link);// link append it to the 'inner' div
+    
+            // Step 5: Create a div with classname 'inner' second block
+            var inner = document.createElement('div');
+            inner.className = 'inner';
+            images.appendChild(inner);// link inner append it to the "images"
+    
+            //Create a div with classname 'image two'
+            var image = document.createElement('div');
+            image.className = 'image two';
+            //  image part style it
+            image.style.width = '100%';
+            image.style.height = '148.34px';
+            image.style.margin = '10px';
+            image.style.backgroundSize = 'cover';
+            image.style.display = 'flex';
+            image.style.justifyContent = 'center';
+            image.style.alignItems = 'center';
+            image.style.textAlign = 'center';
+            image.style.backgroundImage = "linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('https://www.clinicaltrialsarena.com/wp-content/uploads/sites/22/2019/07/ACPS-PS-1-management.jpg')"
+            //  inner part style it
+            inner.style.height = '100%';
+            inner.style.width = '300px';
+            inner.style.display = 'flex';
+            inner.style.flexDirection = 'column';
+            inner.style.alignItems = 'center';
+            inner.appendChild(image);// link append it to the 'inner' div
+    
+            //Create an h3 element, set its text content and style it
+            var h3= document.createElement('h3');
+            h3.textContent = 'Enterprise Agile / Scaled Agile Certification Training';
+            h3.style.color = "white";
+            image.appendChild(h3);// link append it to the image div
+    
+            //Create an anchor element and Style the link
+            var link = document.createElement('a');
+            link.style.textDecoration = "none";
+            link.style.fontSize = '18px';
+            link.style.color = 'black';
+            link.style.fontFamily = 'sans-serif';
+            link.style.fontWeight = 'bold';
+            link.style.marginTop = '20px';
+            //set its href and text content,
+            link.href = '#';
+            link.textContent = 'Scaled Agile Certification';
+            inner.appendChild(link);// link append it to the 'inner' div
+    
+            // Step 6: Create a div with classname 'inner' third block
+            var inner = document.createElement('div');
+            inner.className = 'inner';
+            images.appendChild(inner);// link append it to the "images"
+    
+            //Create a div with classname 'image three'
+            var image = document.createElement('div');
+            image.className = 'image three';
+            //  image part style it
+            image.style.width = '100%';
+            image.style.height = '148.34px';
+            image.style.margin = '10px';
+            image.style.backgroundSize = 'cover';
+            image.style.display = 'flex';
+            image.style.justifyContent = 'center';
+            image.style.alignItems = 'center';
+            image.style.textAlign = 'center';
+            image.style.backgroundImage = "linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('https://img.freepik.com/premium-photo/cartoon-people-classroom-with-graph-wall_1044943-20746.jpg?w=996')"
+            //  inner part style it
+            inner.style.height = '100%';
+            inner.style.width = '300px';
+            inner.style.display = 'flex';
+            inner.style.flexDirection = 'column';
+            inner.style.alignItems = 'center';
+            inner.appendChild(image);// link append it to the 'inner' div
+    
+            //Create an h3 element, set its text content and style it
+            var h3 = document.createElement('h3');
+            h3.textContent = 'PMP Certification Training';
+            h3.style.color = "white";
+            image.appendChild(h3);// link append it to the 'image' div
+    
+            //Create an anchor element and Style the link
+            var link = document.createElement('a');
+            link.style.textDecoration = "none";
+            link.style.fontSize = '18px';
+            link.style.color = 'black';
+            link.style.fontFamily = 'sans-serif';
+            link.style.fontWeight = 'bold';
+            link.style.marginTop = '20px';
+            //set its href and text content,
+            link.href = '#';
+            link.textContent = 'PMP Certification Course';
+            inner.appendChild(link);// link  append it to the 'inner' div
+            
+            // Step 7: Create a div with classname 'inner' fourth block
+            var inner = document.createElement('div');
+            inner.className = 'inner';            
+            images.appendChild(inner);// link append it to the "images"
+    
+            //Create a div with classname 'image four'
+            var image = document.createElement('div');
+            image.className = 'image four';
+            // image part style it
+            image.style.width = '100%';
+            image.style.height = '148.34px';
+            image.style.margin = '10px';
+            image.style.backgroundSize = 'cover';
+            image.style.display = 'flex';
+            image.style.justifyContent = 'center';
+            image.style.alignItems = 'center';
+            image.style.textAlign = 'center';
+            image.style.backgroundImage = "linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('https://qualitythought.in/wp-content/uploads/2024/04/boy-at-music-school-learning-to-play-drums-2021-09-24-04-29-43-utc_7-768x768.webp')"
+            // inner part style it
+            inner.style.height = '100%';
+            inner.style.width = '300px';
+            inner.style.display = 'flex';
+            inner.style.flexDirection = 'column';
+            inner.style.alignItems = 'center';
+            inner.appendChild(image);// link append it to the 'inner' div
+    
+            //Create an h3 element, set its text content and style it
+            var h3 = document.createElement('h3');
+            h3.textContent = 'ISTQB Certification Training';
+            h3.style.color = "white";
+            image.appendChild(h3);// link append it to the image div
+    
+            //Create an anchor element and Style the link
+            var link = document.createElement('a');
+            link.style.textDecoration = "none";
+            link.style.fontSize = '18px';
+            link.style.color = 'black';
+            link.style.fontFamily = 'sans-serif';
+            link.style.fontWeight = 'bold';
+            link.style.marginTop = '20px';
+            //set its href and text content
+            link.href = '#';
+            link.textContent = 'ISTQB Certification';
+            inner.appendChild(link);//link append it to the 'inner' div
+        </script>
+    </body>
+</html>

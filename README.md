@@ -7,3 +7,5 @@ git branch -M main
 git remote add origin https://github.com/Being2Amit/Assignment.git
 git push -u origin main
 git push --force origin main
+git pull origin main
+git pull --rebase origin main
